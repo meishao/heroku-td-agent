@@ -40,7 +40,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  fluent-plugin-mongo (= 0.7.16)
   fluent-plugin-td (= 0.10.29)
   fluentd (~> 0.12.29)
 
