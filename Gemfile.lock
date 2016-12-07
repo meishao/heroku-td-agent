@@ -2,6 +2,9 @@ GEM
   remote: http://rubygems.org/
   specs:
     cool.io (1.4.5)
+    fluent-plugin-mongo (0.7.16)
+      fluentd (>= 0.10.27, < 2)
+      mongo (>= 2.4.0)
     fluent-plugin-td (0.10.29)
       fluentd (>= 0.10.27, < 2)
       td-client (~> 0.8.66)
@@ -19,6 +22,7 @@ GEM
     httpclient (2.8.2.4)
     json (2.0.2)
     msgpack (0.5.12)
+    mongo (2.4.0)
     sigdump (0.2.4)
     string-scrub (0.0.5)
     td-client (0.8.84)
@@ -36,6 +40,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  fluent-plugin-mongo (= 0.7.16)
   fluent-plugin-td (= 0.10.29)
   fluentd (~> 0.12.29)
 
