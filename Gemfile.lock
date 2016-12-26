@@ -3,6 +3,21 @@ GEM
   specs:
     bson (1.12.5)
     cool.io (1.4.5)
+    elasticsearch (1.0.18)
+      elasticsearch-api (= 1.0.18)
+      elasticsearch-transport (= 1.0.18)
+    elasticsearch-api (1.0.18)
+      multi_json
+    elasticsearch-transport (1.0.18)
+      faraday
+      multi_json
+    excon (0.54.0)
+    faraday (0.10.0)
+      multipart-post (>= 1.2, < 3)
+    fluent-plugin-elasticsearch (1.9.2)
+      elasticsearch (< 1.1)
+      excon
+      fluentd (>= 0.10.43)
     fluent-plugin-mongo (0.7.16)
       fluentd (>= 0.10.58, < 2)
       mongo (~> 1.9)
@@ -25,6 +40,8 @@ GEM
     mongo (1.12.5)
       bson (= 1.12.5)
     msgpack (0.5.12)
+    multi_json (1.12.1)
+    multipart-post (2.0.0)
     sigdump (0.2.4)
     string-scrub (0.0.5)
     td-client (0.8.85)
@@ -42,6 +59,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  fluent-plugin-elasticsearch (= 1.9.2)
   fluent-plugin-mongo (= 0.7.16)
   fluent-plugin-td (= 0.10.29)
   fluentd (~> 0.12.29)
