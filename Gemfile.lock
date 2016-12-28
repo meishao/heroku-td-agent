@@ -14,16 +14,10 @@ GEM
     excon (0.54.0)
     faraday (0.10.0)
       multipart-post (>= 1.2, < 3)
-    fluent-mixin-rewrite-tag-name (0.1.0)
-      fluentd
     fluent-plugin-elasticsearch (1.9.2)
       elasticsearch (< 1.1)
       excon
       fluentd (>= 0.10.43)
-    fluent-plugin-geoip (0.6.1)
-      fluent-mixin-rewrite-tag-name
-      fluentd
-      geoip-c
     fluent-plugin-mongo (0.7.16)
       fluentd (>= 0.10.58, < 2)
       mongo (~> 1.9)
@@ -40,7 +34,6 @@ GEM
       tzinfo (>= 1.0.0)
       tzinfo-data (>= 1.0.0)
       yajl-ruby (~> 1.0)
-    geoip-c (0.9.1)
     http_parser.rb (0.6.0)
     httpclient (2.8.2.4)
     json (2.0.2)
@@ -67,7 +60,6 @@ PLATFORMS
 
 DEPENDENCIES
   fluent-plugin-elasticsearch (= 1.9.2)
-  fluent-plugin-geoip (= 0.6.1)
   fluent-plugin-mongo (= 0.7.16)
   fluent-plugin-td (= 0.10.29)
   fluentd (~> 0.12.29)
